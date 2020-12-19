@@ -1,4 +1,4 @@
-# Python program to generate random
+# Python program to generate random Passwords using Tkinter Gui
 
 
 
@@ -73,11 +73,9 @@ radio_middle.grid(row=1, column=3, sticky='E')
 radio_strong = Radiobutton(root, text="Strong", variable=var, value=3)
 radio_strong.grid(row=1, column=4, sticky='E')
 Xcombo = Combobox(root, textvariable=var1)
-
-# Combo Box for length of your password
 Xcombo['values'] = (8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30, 31, 32, "Length")
 Xcombo.current(0)
 Xcombo.bind('<<ComboboxSelected>>')
 Xcombo.grid(column=1, row=1)
-# start the GUI
+
 root.mainloop()
